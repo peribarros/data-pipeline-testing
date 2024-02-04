@@ -3,7 +3,7 @@ describe('template spec', () => {
 
     cy.visit('https://app.stitchdata.com/session/create?redirect=%2Fclient%2F211417%2Fpipeline%2Fv2%2Fbilling')
 
-    cy.get('#st-v2-login-email').type(Cypress.env('USER_EMAIL'))
+    cy.get('#st-v2-login-email').type('pericardiobbarros@gmail.com')
     cy.get('#-st-t-stitch-login-submit-button').click()
 
 
@@ -11,7 +11,7 @@ describe('template spec', () => {
 
       cy.get('#password.input.input--password')
         .click()
-        .type(Cypress.env('USER_PASSWORD'))
+        .type('1a!Q@W#E$R')
       cy.get('button[type="submit"]').click()
     })
 
