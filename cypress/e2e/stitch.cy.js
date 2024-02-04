@@ -9,9 +9,7 @@ describe('template spec', () => {
 
     cy.origin('https://login.us.cloud.talend.com', () => {
 
-      cy.get('#password.input.input--password')
-        .click()
-        .type(Cypress.env('STITCH_USER_PASSWORD'))
+      cy.get('#password.input.input--password').type(Cypress.env('STITCH_USER_PASSWORD'))
       cy.get('button[type="submit"]').click()
     })
 
